@@ -1,0 +1,201 @@
+
+    /* Reset some default styles for all elements */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    /* Styles for the main container with animated background */
+    .main-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url('background.jpeg'); /* Replace 'path-to-your-image.jpg' with the actual path to your image */
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background-color: #1a1a1a; /* Set the background color to a dark gray */
+    }
+    
+    /* Animated twinkling stars background */
+    @keyframes stars {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-100vh);
+        }
+    }
+    
+    /* Styles for the animated stars */
+    .stars {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 200vh;
+        background: url('path-to-your-star-image.png');
+        animation: stars 10s linear infinite;
+    }
+    
+    /* Styles for the outer container */
+    .main-wrap .outer-wrap {
+        width: 400px;
+        height: 460px;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 20px;
+        box-shadow:
+            0 0 10px rgba(255, 255, 255, 0.1),
+            0 0 20px rgba(255, 255, 255, 0.1);
+        text-align: center;
+        padding: 50px 40px;
+        position: relative;
+    }
+    
+    /* Styles for the heading */
+    h1 {
+        font-size: 36px;
+        color: #ff9900; /* Set the heading color to orange */
+        text-shadow:
+            0 0 10px #ff9900,
+            0 0 42px #0fa;
+    }
+    
+    /* Styles for the horizontal rule */
+    hr {
+        width: 40px;
+        background-color: #ffcc00; /* Set the horizontal rule color to yellow */
+        margin: auto;
+        margin-top: 8px;
+        height: 4px;
+    }
+    
+    /* Styles for the social login section */
+    .social-login {
+        margin-top: 20px;
+    }
+    
+    /* Styles for social login icons */
+    .social-login a {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid #ffcc00; /* Set the social login icons border color to yellow */
+        margin: 10px;
+        text-decoration: none;
+        padding: 8px;
+        display: inline-block;
+    }
+    
+    .social-login a img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
+    /* Styles for the paragraph */
+    p {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #ffcc00; /* Set the paragraph color to yellow */
+    }
+    
+    /* Styles for the form section */
+    .form {
+        text-align: left;
+    }
+    
+    /* Styles for form labels */
+    .form label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #ffcc00; /* Set the form label color to yellow */
+        text-shadow:
+            0 0 10px #ffcc00,
+            0 0 42px #0fa;
+    }
+    
+    /* Styles for form inputs */
+    .form input {
+        width: 100%;
+        height: 40px;
+        border: 2px solid #ffcc00; /* Set the form input border color to yellow */
+        border-radius: 8px;
+        padding: 10px;
+        margin: 10px 0;
+        background: #333; /* Set the form input background color to dark gray */
+        color: #fff;
+    }
+    
+    .form input:focus {
+        border: 2px solid #ff9900; /* Set the form input border color on focus to orange */
+        outline: none;
+    }
+    
+    .form input::placeholder {
+        color: #8c8c8c;
+    }
+    
+    /* Styles for the checkbox */
+    .form input[type="checkbox"] {
+        height: 18px;
+        width: 18px;
+        background-color: #333; /* Set the checkbox background color to dark gray */
+    }
+    
+    /* Styles for the "Remember Me" text */
+    .rm-me {
+        font-size: 14px;
+        font-weight: 600;
+        margin-left: 8px;
+        color: #ffcc00; /* Set the "Remember Me" text color to yellow */
+    }
+    
+    /* Styles for the "Forgot Password?" link */
+    .fg-pa{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: #ff9900; /* Set the "Forgot Password?" link color to orange */
+        margin-left: 20px;
+    }
+    
+    .p {
+        margin-top: 10px;
+    }
+    
+    .fg-pa:hover {
+        border-bottom: 2px solid #ff9900; /* Set the bottom border color of the "Forgot Password?" link on hover to orange */
+    }
+    
+    /* Styles for the login button */
+    .btn {
+        height: 44px;
+        width: 50%;
+        margin-left: 23%;
+        border-radius: 22px;
+        background: linear-gradient(to right, #ff9900, #00a1ff); /* Set the gradient background color for the login button */
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 5px;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    
+    .btn:hover {
+        background: linear-gradient(to top, #ff0000, #00ff00, #0000ff); /* Set the gradient background color for the login button on hover */
+        text-shadow: 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0;
+        border: 2px solid #ffa;
+        border: 2px dashed #ff0000;
+    }
+    
+    .reg {
+        font-weight: bold;
+        margin-left: 20%;
+    }

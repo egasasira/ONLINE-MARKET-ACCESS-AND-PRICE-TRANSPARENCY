@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tform.css">
+    <title>Agriculture Product Stock form</title>
+</head>
+<body>
+    <header>
+        <h1>Agriculture Product Stock form</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Add New Product</h2>
+            <form action="process_form.php" method="POST">
+                <div class="form-group">
+                    <label for="product-name">Product Name:</label>
+                    <input type="text" id="product-name" name="product-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="product-type">Product Type:</label>
+                    <input type="text" id="product-type" name="product-type" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="text" id="price" name="price" required>
+                </div>
+                
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Product Stock</h2>
+            <!-- The product stock table goes here -->
+        </section>
+    </main>
+</body>
+</html>

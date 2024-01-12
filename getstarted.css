@@ -1,0 +1,50 @@
+.get-started {
+  padding: 50px 0;
+  background-color: #abcdef; /* Replace #abcdef with your desired background color */
+  text-align: center;
+  }
+  
+  .get-started h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    width: 300px;
+    margin: 50px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .feature h3 {
+    font-size: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .feature p {
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 50px 50px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+  }
